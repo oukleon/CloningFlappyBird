@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class ScoreUp : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         Score.score++;
     }
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    Score.score++;
+    //}
 }
